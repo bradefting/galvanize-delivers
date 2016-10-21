@@ -12,3 +12,16 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.brand-logo{
+  margin-left: 20px;
+}
+
+#index-banner {
+  height: 500px;
+  background: url(./img/hero.jpg) no-repeat fixed;
+}
+
+.header{
+  padding-top: 140px;
+}
