@@ -19,7 +19,7 @@
 
 #index-banner {
   height: 500px;
-  background: url(./img/hero.jpg) no-repeat fixed;
+  background: url(./img/hero.jpg) fixed;
 }
 
 .header{

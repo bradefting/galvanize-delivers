@@ -32,7 +32,7 @@
   <section class="section no-pad-bot" >
     <div class="container">
       <div class="row">
-        <div class="col l6 s12 left-align">
+        <div class="col l7 s12 left-align">
           <h4>Menu</h4>
 
           <div class="row">
@@ -42,7 +42,7 @@
                 <div class="card-image">
                   <img src="./img/burger.jpg">
                 </div>
-                <div class="card-content">
+                <div class="card-content royale">
                   <span class="card-title">Royale with Cheese</span>
                   <p>$8.99</p>
                 </div>
@@ -100,24 +100,87 @@
               </div>
             </div> <!-- end of column div -->
           </div> <!-- end of second row -->
-
-
-
          </div> <!--end of menu column -->
 
-        <div class="col l6 s12 left-align">
+
+      <!-- start of order -->
+        <div class="col l5 s12 left-align">
+
           <h4>Order</h4>
+            <section class="cart">
+              <table class="striped">
+                <thead>
+                  <tr>
+                    <th data-field="id">Item</th>
+                    <th data-field="id" class="right-align">Price</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Burger</td>
+                    <td>$5.99</td>
+                  </tr>
+                  <tr>
+                    <td>Burger</td>
+                    <td>$5.99</td>
+                  </tr>
+                  <tr>
+                    <td>Burger</td>
+                    <td>$5.99</td>
+                  </tr>
+                </tbody>
+              </table>
+            <h6 class="center-align">Subtotal</h6>
+            <h6 class="center-align">Tax</h6>
+            <h6 class="center-align">Total</h6>
+          </section>
+
+          <section class="customerInfo">
+            <!-- <form class="col s12"> -->
+
+              <!-- name -->
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate">
+                  <label for="icon_prefix">First Name</label>
+                </div>
+              </div>
+
+              <!-- phone -->
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">phone</i>
+                  <input id="icon_telephone" type="tel" class="validate">
+                  <label for="icon_telephone">Phone Number</label>
+                </div>
+              </div>
+
+              <!-- address -->
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">mode_edit</i>
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">Address</label>
+                </div>
+              </div>
+
+
+            <!-- </form> -->
+          </section>
+
+          <!-- submit button -->
+          <div class="row center">
+            <a href="order.html" id="download-button" class="btn-large waves-effect red darken-1">PLACE ORDER</a>
+          </div>
+
         </div>
 
       </div>
     </div>
   </section>
 
-  <div class="container">
-    <div class="section">
-
-    </div>
-  </div>
+  <br>
 
   <!-- footer -->
   <footer class="page-footer grey darken-4">
