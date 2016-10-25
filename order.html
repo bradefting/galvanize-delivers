@@ -47,7 +47,7 @@
                   <p>$8.99</p>
                 </div>
                 <div class="card-action">
-                  <a href="#" class="red-text">ADD TO ORDER</a>
+                  <a href="#" class="red-text burger">ADD TO ORDER</a>
                 </div>
               </div>
             </div> <!-- end of column div -->
@@ -58,11 +58,11 @@
                   <img src="./img/pizza.jpg">
                 </div>
                 <div class="card-content">
-                  <span class="card-title">Arugula Pie</span>
+                  <span class="card-title">Arugula Pizza</span>
                   <p>$11.99</p>
                 </div>
                 <div class="card-action">
-                  <a href="#" class="red-text">ADD TO ORDER</a>
+                  <a href="#" class="red-text pizza">ADD TO ORDER</a>
                 </div>
               </div>
             </div> <!-- end of column div -->
@@ -76,11 +76,11 @@
                   <img src="./img/ribs.jpg">
                 </div>
                 <div class="card-content">
-                  <span class="card-title">Smoked Swine</span>
+                  <span class="card-title">Smoked Ribs</span>
                   <p>$14.99</p>
                 </div>
                 <div class="card-action">
-                  <a href="#" class="red-text">ADD TO ORDER</a>
+                  <a href="#" class="red-text ribs">ADD TO ORDER</a>
                 </div>
               </div>
             </div> <!-- end of column div -->
@@ -95,7 +95,7 @@
                   <p>$7.99</p>
                 </div>
                 <div class="card-action">
-                  <a href="#" class="red-text">ADD TO ORDER</a>
+                  <a href="#" class="red-text biscuit">ADD TO ORDER</a>
                 </div>
               </div>
             </div> <!-- end of column div -->
@@ -107,7 +107,7 @@
         <div class="col l5 s12 left-align">
 
           <h4>Order</h4>
-            <section class="cart">
+            <section class="cart hidden">
               <table class="striped">
                 <thead>
                   <tr>
@@ -115,63 +115,65 @@
                     <th data-field="id" class="right-align">Price</th>
                   </tr>
                 </thead>
+                <tbody class="items">
+                </tbody>
+              </table>
+              <table class="totals">
                 <tbody>
                   <tr>
-                    <td>Burger</td>
-                    <td>$5.99</td>
+                    <td class="right-align">Subtotal</td>
+                    <td class="subtotalAmount right-align">$0.00</td>
                   </tr>
                   <tr>
-                    <td>Burger</td>
-                    <td>$5.99</td>
+                    <td class="right-align">Tax</td>
+                    <td class="taxAmount right-align">$0.00</td>
                   </tr>
                   <tr>
-                    <td>Burger</td>
-                    <td>$5.99</td>
+                    <td class="right-align">Total</td>
+                    <td class="totalAmount right-align">$0.00</td>
                   </tr>
                 </tbody>
               </table>
-            <h6 class="center-align">Subtotal</h6>
-            <h6 class="center-align">Tax</h6>
-            <h6 class="center-align">Total</h6>
           </section>
 
           <section class="customerInfo">
-            <!-- <form class="col s12"> -->
+
+            <form action="" method="post">
 
               <!-- name -->
               <div class="row">
                 <div class="input-field col s12">
-                  <i class="material-icons prefix">account_circle</i>
-                  <input id="icon_prefix" type="text" class="validate">
-                  <label for="icon_prefix">First Name</label>
+                  <i class="material-icons red-text prefix">account_circle</i>
+                  <input id="customerName" name="customerName" type="text" class="validate" required>
+                  <label for="customerName" >Name</label>
                 </div>
               </div>
 
               <!-- phone -->
               <div class="row">
                 <div class="input-field col s12">
-                  <i class="material-icons prefix">phone</i>
-                  <input id="icon_telephone" type="tel" class="validate">
-                  <label for="icon_telephone">Phone Number</label>
+                  <i class="material-icons red-text prefix">phone</i>
+                  <input id="customerPhone" name="customerPhone" type="tel" class="validate" required>
+                  <label for="customerPhone" >Phone Number</label>
                 </div>
               </div>
 
               <!-- address -->
               <div class="row">
                 <div class="input-field col s12">
-                  <i class="material-icons prefix">mode_edit</i>
-                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-                  <label for="icon_prefix2">Address</label>
+                  <i class="material-icons red-text prefix">mode_edit</i>
+                  <textarea id="address" class="validate materialize-textarea" required></textarea>
+                  <label for="address">Address</label>
                 </div>
               </div>
 
-
-            <!-- </form> -->
+            </form>
           </section>
 
           <!-- submit button -->
           <div class="row center">
-            <a href="order.html" id="download-button" class="btn-large waves-effect red darken-1">PLACE ORDER</a>
+            <a href="#" id="submitForm" class="btn-large waves-effect red darken-1" >PLACE ORDER</a>
+            <!-- id="download-button"  removed from <a href>-->
           </div>
 
         </div>
@@ -211,7 +213,7 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 
   </body>
 </html>
