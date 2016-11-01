@@ -13,7 +13,7 @@
 
 <body>
   <!-- header -->
-  <section class="navbar-fixed">
+  <header class="navbar-fixed">
     <nav class="grey darken-3" role="navigation">
       <div class="nav-wrapper container-fluid"><a id="logo-container" href="index.html" class="brand-logo">Galvanize Delivers</a>
         <ul class="right hide-on-med-and-down">
@@ -27,22 +27,26 @@
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>
-  </section>
+  </header>
 
   <!-- headline image -->
-  <section class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <h1 class="header center white-text">Fine Dining, Delivered.</h1>
-      <div class="row center">
-        <a href="order.html" id="download-button" class="btn-large waves-effect red darken-1">Place an order</a>
+  <section id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <h1 class="header center white-text">Fine Dining, Delivered.</h1>
+        <div class="row center">
+          <a href="order.html" id="download-button" class="btn-large waves-effect red darken-1">Place an order</a>
+        </div>
+        <br><br>
+
       </div>
-      <br><br>
     </div>
+    <div class="parallax"><img src="./img/hero.jpg" alt="Galvanize Delivers Food"></div>
   </section>
 
-  <div class="container">
+  <section class="container">
       <!-- info boxes   -->
-      <section class="row">
+      <div class="row">
 
         <div class="col s12 m4">
           <div class="icon-block">
@@ -68,8 +72,8 @@
           </div>
         </div>
 
-      </section>
-  </div>
+    </div>
+  </section>
 
   <!-- footer -->
   <footer class="page-footer grey darken-3">
@@ -98,7 +102,7 @@
   </footer>
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="script.js"></script>
   <!--On surge at  -->

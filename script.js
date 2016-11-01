@@ -2,6 +2,9 @@
 
 $(function(){
 
+  // initialize headline image
+  $('.parallax').parallax();
+
 var subtotal=0;
 
   $('.burger').on('click', function(){
